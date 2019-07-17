@@ -1,7 +1,5 @@
-###SQLD 기출문제 풀이 앱
+### SQLD Study App Dev
 - - - -
-
-화면구성 소스
 
 1. Intro
 2. FirstMenu
