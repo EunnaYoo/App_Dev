@@ -1,5 +1,6 @@
 package com.example.sqld;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -34,7 +35,7 @@ public class Test extends AppCompatActivity {
         btn2 = (Button) findViewById(R.id.btn2);
         btn3 = (Button) findViewById(R.id.btn3);
 
-        pass = (TextView) findViewById(R.id.pass);
+        //pass = (TextView) findViewById(R.id.pass);
         result = (TextView) findViewById(R.id.result);
         text1 = (TextView) findViewById(R.id.text1);
         text2 = (TextView) findViewById(R.id.text2);
@@ -148,20 +149,9 @@ public class Test extends AppCompatActivity {
         rbtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (total >= 4) {
-                    pass.setText(Html.fromHtml("점수 : " + total.toString() + "  합격"));
-                } else {
-                    pass.setText(Html.fromHtml("점수 : " + total.toString() + "  불합격"));
-                }
-
-                result.setText(Html.fromHtml(
-                        user1[0] + " " + ans1[0] + " " + yn[0] + "<br />" +
-                                user1[1] + " " + ans1[1] + " " + yn[1] + "<br />" +
-                                user1[2] + " " + ans1[2] + " " + yn[2] + "<br />"
-                ));
+                Intent intent = new Intent(Test.this, Result.class);
+                startActivity(intent);
             }
-
         });
-
     }
 }
