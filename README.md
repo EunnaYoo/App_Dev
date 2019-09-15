@@ -1,6 +1,7 @@
 ### SQLD Study App Dev
 - - - -
-
+<Copyright 2019. S.O.S Networks & EunnaYoo. All rights reserved.>  
+  
 1. Intro
 2. FirstMenu
    - 기출문제 메뉴
